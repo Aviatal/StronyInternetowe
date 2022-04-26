@@ -1,0 +1,112 @@
+body
+{
+    background-image: linear-gradient(red, black);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#tlo
+{
+    position: relative;
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/06/22/48/old-trafford-1959155_960_720.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    top: -8px;
+}
+#logo
+{
+    position: relative;
+    top: -65%;
+    height: 25%;
+}
+h1.logo
+{
+    position: relative;
+    top: -72%;
+    font-family: 'Monotype Corsiva', cursive;
+    font-size: 35px;
+}
+#menu
+{
+    position: relative;
+    top: -8px;
+    color: white;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+table.menu
+{
+    width: 100%;
+    font-size: 40px;
+    background-color: black;
+    border: 10px white;
+}
+#main
+{
+    background-color: black;
+    position: relative;
+    top: -35px;
+    color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 25px;
+    font-size: 20px;
+    text-align: justify;
+}
+article
+{
+    font-family: corbel;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: white 10px;
+    padding-top: 0px;
+}
+footer
+{
+    background-color: black;
+    position: relative;
+    top: -35px;
+    color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 25px;
+    font-size: 20px;
+    text-align: center;   
+}
+#baner
+{
+    width: 100%;
+}
+#wynik
+{
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+}
+td.numer
+{
+    font-weight: bold;
+}
+#goscie
+{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+#gospodarze
+{
+    float: left;
+    width: 50%;
+}
+#pusty
+{
+    height: 230px;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+}

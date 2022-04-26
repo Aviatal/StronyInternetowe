@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-Language" content="pl">
+        <meta name="author" content="Paweł Budek">
+        <title>Diabełki</title>
+        <link rel="stylesheet" href="main.css"/>
+        <script>
+            function cena()
+            {
+                var dorosli = document.getElementById("dor").value;
+                var dzieci = document.getElementById("dz").value;
+
+            if(!isNaN(dorosli) && dorosli != "")
+                {
+                   var suma = 350 * dzieci + 550 * dorosli; document.getElementById("pusty").innerHTML="<center><p>Do zapłaty masz " + suma + " złotych</p><p>Pamiętaj, że cena obejmuje:<ul><li>Bilety na mecz</li><li>Nocleg w Manchesterze</li><li>Bilety na samolot</li><li>Zwiedzanie miasta</li></ul></p></cemter>";
+                }
+}   
+        </script>
+    </head>
+    <body>      
+        <div id="tlo">
+            <svg width="100%" height="100%">
+                  <circle cx="50%" cy="55%" r="90px"
+                    stroke="black" stroke-width="2" fill="white"/>
+            </svg>
+            <a href="index.html"><img src="logo.gif" id="logo"/></a>
+            <h1 class="logo">Red Devils</h1>
+        </div>
+        <div id="menu">
+            <table class="menu">
+                <tr>
+                    <td><a href="oNas.html">O nas</a> </td>
+                    <td><a href="ostatnieMecze.html">Ostatnie mecze</a> </td><td><a href="bilety.html">Bilety</a></td><td><a href="historia.html">Historia</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="main">
+            <h1 style="padding: 20px;">Oblicz cenę biletu na mecz:</h1>
+            <center>
+            <form>
+                    <table>
+                    <tr>
+                        <td>Liczba osób dorosłych</td><td><input type="number" id="dor" placeholder="550 zł/os"/> </td>
+                    </tr>
+                    <tr>
+                        <td>Liczba dzieci</td><td><input type="number" id="dz" placeholder="350 zł/os"/> </td>
+                    </tr>
+                        <tr><td colspan=2 style="text-align: center"><input type="button" value="Sprawdź cenę" onclick="cena()"/> </td>
+                    </tr>
+                </table>            
+            </form>
+            </center>
+            <div id="pusty">
+            
+            </div>
+
+            
+
+        </div>
+        <footer>
+            &copy; reddevils.pl 2021
+        </footer>
+    </body>
+</html>
